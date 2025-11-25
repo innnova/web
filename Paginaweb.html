@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INNOVA - Transformación de Liderazgo y Retención de Talento</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de la fuente Inter -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Navbar/Header Sencillo -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-indigo-700">INNOVA</h1>
+            <a href="#diagnostico" class="px-4 py-2 bg-indigo-600 text-white text-sm font-semibold rounded-lg hover:bg-indigo-700 transition duration-300 shadow-md">
+                Diagnóstico Gratuito
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección Principal: Problema y Solución (Hero) -->
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- Problema -->
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900 mb-6">
+                ¿Siente la presión?
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Escucha quejas constantes y ve cómo su mejor talento renuncia. Sabe que el problema es real.
+            </p>
+            
+            <!-- Dato Clave del Problema -->
+            <div class="bg-red-50 p-6 rounded-xl shadow-lg mb-12 border-l-4 border-red-500">
+                <p class="text-2xl font-bold text-red-700">
+                    El problema no es el sueldo.
+                </p>
+                <p class="text-lg text-red-600 mt-2">
+                    El <span class="text-3xl font-extrabold">80%</span> de la rotación se debe a <span class="underline decoration-wavy decoration-red-500">malos líderes.</span>
+                </p>
+                <p class="text-sm text-gray-500 mt-4">
+                    Este problema de liderazgo le cuesta a su empresa millones en reemplazos y eficiencia perdida.
+                </p>
+            </div>
+
+            <!-- Solución INNOVA -->
+            <div class="bg-indigo-50 p-8 rounded-xl shadow-xl border-t-4 border-indigo-600">
+                <h3 class="text-3xl font-bold text-indigo-800 mb-4">
+                    Somos INNOVA.
+                </h3>
+                <p class="text-xl text-indigo-700 leading-relaxed mb-6">
+                    No damos cursos genéricos. Nuestra consultoría es estratégica: atacamos la causa raíz con un diagnóstico que transforma a sus gerentes en líderes que inspiran y retienen.
+                </p>
+                <p class="text-2xl font-extrabold text-green-600">
+                    ¿El resultado? Una cultura rentable.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de Llamada a la Acción (CTA) y Transformación -->
+    <section id="diagnostico" class="bg-indigo-700 text-white py-16 md:py-20">
+        <div class="container mx-auto px-4 text-center max-w-4xl">
+            <!-- Llamada al alivio -->
+            <h3 class="text-3xl sm:text-4xl font-bold mb-4">
+                Deje de ser el bombero
+            </h3>
+            <p class="text-xl mb-8">
+                Y obtenga el reconocimiento que necesita para avanzar. Deje de adivinar.
+            </p>
+
+            <!-- Botón principal de CTA (Destacado) -->
+            <div class="flex justify-center">
+                <button onclick="document.getElementById('modal-diagnostico').classList.remove('hidden')" 
+                        class="px-10 py-4 bg-yellow-400 text-indigo-900 text-2xl font-bold uppercase rounded-full shadow-2xl transition duration-300 transform hover:scale-105 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-500 focus:ring-opacity-50">
+                    Escanee Ahora nuestro Diagnóstico Gratuito de 3 Minutos
+                </button>
+            </div>
+            <p class="mt-4 text-lg font-light">
+                Descubra la causa raíz de su rotación.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer sencillo -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2024 INNOVA Consultoría Estratégica. Todos los derechos reservados.</p>
+            <p class="mt-2 text-gray-400">Transformando Gerentes en Líderes.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Diagnóstico (Simulación de escaneo/Formulario) -->
+    <div id="modal-diagnostico" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white p-8 rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-300 scale-100">
+            <!-- Encabezado del Modal -->
+            <div class="flex justify-between items-start mb-4">
+                <h4 class="text-2xl font-bold text-indigo-700">Diagnóstico Gratuito de INNOVA</h4>
+                <button onclick="document.getElementById('modal-diagnostico').classList.add('hidden')" class="text-gray-400 hover:text-gray-600 text-3xl leading-none">&times;</button>
+            </div>
+
+            <!-- Contenido del Modal (Simulación de QR o Formulario) -->
+            <p class="text-gray-600 mb-6">
+                Complete este breve formulario de 3 minutos para iniciar el diagnóstico y descubrir la causa raíz de su rotación.
+            </p>
+            
+            <form id="diagnostico-form" class="space-y-4">
+                <div>
+                    <label for="nombre" class="block text-sm font-medium text-gray-700">Su Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required 
+                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico Corporativo</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@suempresa.com" required 
+                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <div>
+                    <label for="puesto" class="block text-sm font-medium text-gray-700">Puesto / Nivel de Gerencia</label>
+                    <input type="text" id="puesto" name="puesto" placeholder="Director de RRHH" required 
+                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                
+                <button type="submit" class="w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition duration-300 shadow-md">
+                    Iniciar Diagnóstico (3 Minutos)
+                </button>
+            </form>
+            
+            <!-- Mensaje de éxito (Oculto inicialmente) -->
+            <div id="success-message" class="mt-6 p-4 bg-green-100 text-green-700 rounded-lg hidden" role="alert">
+                <p class="font-semibold">¡Gracias por registrarse!</p>
+                <p>Un consultor INNOVA se pondrá en contacto con usted en breve para iniciar el diagnóstico personalizado.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de JavaScript para el formulario (Manejo de la simulación de envío) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('diagnostico-form');
+            const successMessage = document.getElementById('success-message');
+            const modal = document.getElementById('modal-diagnostico');
+
+            // Función para simular el envío del formulario
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Detiene el envío real del formulario
+                
+                // Oculta el formulario y muestra el mensaje de éxito
+                form.classList.add('hidden');
+                successMessage.classList.remove('hidden');
+
+                // Opcional: Cerrar el modal después de 5 segundos
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                    form.classList.remove('hidden'); // Reinicia el formulario para futuras interacciones
+                    successMessage.classList.add('hidden');
+                    form.reset(); // Limpia los campos
+                }, 5000); 
+
+                // En una aplicación real, aquí se enviaría la data a un servidor
+                console.log('Datos de diagnóstico simulados enviados:', {
+                    nombre: document.getElementById('nombre').value,
+                    email: document.getElementById('email').value,
+                    puesto: document.getElementById('puesto').value,
+                });
+            });
+        });
+    </script>
+</body>
+</html>
